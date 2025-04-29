@@ -1,5 +1,5 @@
 
-var img = loadImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANxKYtKSphNYfcZ2_ZxPTqF6flUlf4Xjc4A&s");
+var img1 = loadImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTANxKYtKSphNYfcZ2_ZxPTqF6flUlf4Xjc4A&s");
 
 
 
@@ -45,10 +45,10 @@ fill(0,0,0)
    i += 40;}
      
     
-    
+   };
+   
     draw = function(){
-    image(img,0,-20,400,200);}
+    image(img1,0,-20,400,200);}
     
-};
 
 
