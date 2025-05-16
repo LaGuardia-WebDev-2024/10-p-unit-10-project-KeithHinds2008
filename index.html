@@ -1,49 +1,204 @@
-<!-- Unit 10 Project
-Requirements
-[  ] Loop #1 - While Loop
-[  ] Loop #2 - For Loop
-[  ] Loops #3 
-[  ] Three new HTML elements/CSS Declarations
-
-Select ONE Additional 
-[ no ] Feature 1 - if() statement
-[ no ] Feature 2 - random()
-[ no ] Feature 3 - image added to the canvas
-[ no ] Feature 4 - mouseX and mouseY
-[ no ] Feature 5 - custom function
--->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Unit 10 Project</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+       html {
+        height: 100%;
+      }
+      .parallax {
+        /* The image used */
+        background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/IMG_0341.jpeg?v=1747358496043");
+
+        /* Full height */
+        height: 110%;
+        width: 100%;
+
+        /* Create the parallax scrolling effect */
+        /*   background-attachment: fixed; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .head {
+        list-style-type: none;
+        margin: 0;
+        margin-bottom: -150px;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+      }
+
+      img {
+        border: 30px;
+        border-radius: 8px;
+      }
+
+      body {
+        background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/keith.jpeg?v=1747360300536");
+        height: 120%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .head li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .head li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: left;
+      }
+
+      li :hover {
+        background-color: black;
+      }
+
+      #res {
+        color: #beb9b3;
+      }
+
+      .bio {
+        color: white;
+      }
+
+      .heading {
+        color: white !important;
+      }
+
+      #dance {
+        color: white;
+      }
+      #email {
+        color: white;
+      }
+
+      a:hover {
+        background-color: none;
+        color: grey;
+      }
+
+      h3 {
+        color: #beb9b3;
+      }
+
+      #chanel {
+        background-color: none;
+        text-align: right;
+        margin-right: 0%;
+      }
+
+      a {
+        font-size: 18px;
+        margin: 8px;
+      }
+
+      #move {
+        background-color: none;
+        text-align: left;
+      }
+
+      #top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #picquo {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #size {
+        font-size: 40px;
+      }
+
+      .side {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .ins {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-family: "Gideon Roman", serif;
+        font-weight: 400;
+        font-size: 45px;
+      }
+
+      .side2 {
+        width: 50%;
+      } 
+       
+      
+    </style>
+  </head>
   <body>
-    <div class="container">
-      <div>
-        <h2 id="start">The Muse</h2>
-        <p>
-          by random photo off the internet
-        </p>
-        <img
-          class="pic" src="https://static.vecteezy.com/system/resources/thumbnails/040/247/647/small/ai-generated-adorable-chickens-lined-up-on-a-wooden-board-copy-space-photo.jpg"
-        />
-      </div>
-      <div>
-        <h2 id="end">The Masterpiece of my special chicks</h2>
-        <p>
-          by Keith Hinds
-        </p>
-        <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
-      </div>
-    </div>
+     <ul class="head">
+    <li style="float: left"><h1 >Keith-Allen Hinds</h1></li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/keith_hinds_43889/profilecard/?igsh=MWI1NXVzNTJkanV0Nw="
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/0973c889-3580-4033-b9bd-abfe9b7da1aa.image.png?v=1735836652443"
+            width="25"
+          />
+        </a>
+      </li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://youtube.com/@keithhinds1913?si=Icno7YENb0QFQpVW"
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/5f8df92e-76ec-4956-8f12-629f7679a2b8.image.png?v=1735836749140"
+            width="25"
+          />
+        </a>
+      </li>
+      <li style="float: right">
+        <a
+          target="_blank"
+          href="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/5f8df92e-76ec-4956-8f12-629f7679a2b8.image.png?v=1735836749140
+"
+        >
+          <img
+            class="ani"
+            src="https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/3d55feb6-d640-471d-8f83-dae1be1f2a0a.image.png?v=1735836786387"
+            width="25"
+          />
+        </a>
+      </li>
+
+      <li  style="float: right"><a href="contact.html">Contact</a></li>
+
+      <li  style="float: right" ><a href="choreo.html">Choreography</a></li>
+      <li  style="float: right"><a href="media.html">Media</a></li>
+      <li  style="float: right">
+        <a href="https://docs.google.com/document/d/16MYVdqUXM6GKA33pXF27tlnYMOmTKmIBZMfzlYQnHtw/edit?usp=sharing"
+          >Resume</a>
+      </li>
+      <li  style="float: right"><a href="aboutme.html" class="ani">About</a></li>
+      <li  style="float: right"><a href="index.html">Home</a></li>
+
+
+    </ul>
   </body>
 </html>
-
-<!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->
