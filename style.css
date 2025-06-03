@@ -3,8 +3,17 @@ html {
   height: 100%;
 }
 
+
+#home {  background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6211.jpg?v=1748533420180");
+
+
+}
+
 #back {
   background-image: url("https://cdn.glitch.global/d03d2377-54bd-4c0f-afd1-81effb05b730/DLNY-6162.jpg?v=1744213238658");
+
+
+
 }
 
 #dlny {
@@ -49,6 +58,17 @@ body {
   background-size: cover;
 }
 
+a {
+  font-size: 18px;
+  margin: 8px;
+}
+
+a:hover {
+  background-color: none;
+  color: (169, 169, 169);
+}
+
+
 .head li a {
   display: block;
   color: white;
@@ -69,8 +89,9 @@ body {
 }
 
 li :hover {
-  background-color: black;
+/*   background-color: black; */
   border-radius: 30px;
+  color: grey;
 }
 
 #res {
@@ -92,10 +113,9 @@ li :hover {
   color: white;
 }
 
-a:hover {
-  background-color: none;
-  color: grey;
-}
+
+
+
 
 h3 {
   color: #beb9b3;
@@ -107,10 +127,6 @@ h3 {
   margin-right: 0%;
 }
 
-a {
-  font-size: 18px;
-  margin: 8px;
-}
 
 #move {
   background-color: none;
